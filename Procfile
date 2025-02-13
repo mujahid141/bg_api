@@ -1,1 +1,1 @@
-echo "web: gunicorn bg_removal_project.wsgi:application" > Procfile
+web: gunicorn testSite.wsgi:application --bind 0.0.0.0:$PORT
